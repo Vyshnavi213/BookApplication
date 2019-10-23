@@ -1,0 +1,7 @@
+<h2>Books</h2>
+<br>
+<app-hero-search></app-hero-search>
+
+<mat-list role="list" *ngFor="let hero of heroes" class="mat-primary">
+  <mat-list-item role="listitem">{{hero.id}}&nbsp;&nbsp;{{hero.name}}</mat-list-item>
+</mat-list>

@@ -1,0 +1,11 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="side" role="navigation" opened="true" color = "primary">
+        <mat-nav-list>
+            <a mat-list-item routerLink='/dashboard'>Books List</a>
+            <a mat-list-item routerLink='/heroes'>Books</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

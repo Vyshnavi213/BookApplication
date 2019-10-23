@@ -1,0 +1,42 @@
+<div *ngIf="hero">
+
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <div>
+        <label>Id:
+            <input [(ngModel)]="hero.id" placeholder="id">
+        </label>
+    </div>
+
+    <div>
+        <label>Name:
+            <input [(ngModel)]="hero.name" placeholder="name" />
+        </label>
+    </div>
+
+    <div>
+        <label>Author:
+            <input [(ngModel)]="hero.author" placeholder="author" />
+        </label>
+    </div>
+
+    <div>
+        <label>
+            Price:
+            <input [(ngModel)]="hero.price" placeholder="price">
+        </label>
+    </div>
+
+    <div>
+        <label> PublishedYear:
+            <input [(ngModel)]="hero.publishedYear" placeholder="publishedYear">
+        </label>
+    </div>
+
+    <div>
+        <label>Publisher: <input [(ngModel)]="hero.publisher" placeholder="publisher" />
+        </label>
+    </div>
+
+    <button (click)="goBack()">Go back</button>
+    <button (click)="save()">Save</button>
+</div>

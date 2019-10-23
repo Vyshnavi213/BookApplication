@@ -1,0 +1,23 @@
+<div id="search-component">
+    <h4><label for="search-box">Book Search</label></h4>
+
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+
+    <ul class="search-result">
+        <li *ngFor="let hero of heroes$ | async">
+            <a routerLink="/detail/{{hero.id}}">
+                {{hero.name}}
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- 
+<mat-form-field class="example-full-width">
+    <textarea matInput placeholder="search book" (input)="search(searchBox.value)"></textarea>
+    <ul class="search-result">
+        <li *ngFor="let hero of heroes$ | async">
+            {{hero.name}}
+        </li>
+    </ul>
+</mat-form-field> -->
